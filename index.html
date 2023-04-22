@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<div>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        <title>Movies Website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Movies.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tillana:wght@700&display=swap" rel="stylesheet">
+    </head>
+
+
+    <div id="home">
+        <header class="nav">
+            <h1 class="heading">Movie</h1>
+
+            <div class="icon" onclick="Button()" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <form class="search-input" id="form">
+                <span class="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-search search-icon" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </span>
+                <input class="input" id="myInput" name="" type="text" placeholder="Search... " />
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                    class="bi bi-x-lg close" viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                </svg>
+            </form>
+
+            <ul class="nav-items" id="navitem">
+                <a href="#home" onclick="Button()">
+                    <li class="items">Home</li>
+                </a>
+                <a href="#movies" onclick="Button()">
+                    <li class="items">Movies</li>
+                </a>
+                <a href="#series" onclick="Button()">
+                    <li class="items">Series</li>
+                </a>
+                <a href="#kid" onclick="Button()">
+                    <li class="items">Kids Space</li>
+                </a>
+                <a href="#contact" onclick="Button()">
+                    <li class="items">Contact</li>
+                </a>
+
+            </ul>
+
+        </header>
+
+        <div id="data">
+            <section>
+                <div>
+                    <center>
+                        <h1 class="h1">Latest Movies</h1>
+                    </center>
+                    <div class="cards" id="main">
+                        <div class="movie">
+                            <img class="image" src="https://m.media-amazon.com/images/I/61O8KP0CYVS._SY741_.jpg " />
+                            <p class="p">Avatar</p>
+                            <div class="overlay">
+                                <h2>Avatar</h2>
+                                <a>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                        class="imbd" /> 
+                                        <span class="span">7.8 / 10</span></a>
+                                    <h3 class="cast-h">Overview</h3>
+                                    <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Avatar_The_Way_of_Water_Tokyo_Press_Conference_Sam_Worthington_%2852563252594%29_%28cropped%29.jpg/800px-Avatar_The_Way_of_Water_Tokyo_Press_Conference_Sam_Worthington_%2852563252594%29_%28cropped%29.jpg"
+                                        class="cast-img" />
+                                    <img src="https://flxt.tmsimg.com/assets/194024_v9_bb.jpg" class="cast-img" /> -->
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        </section>
+                        </div>
+
+                        <!-- <div class="cards">
+                         <div class="movie">
+                            <img class="image"
+                                src="https://cdn.marvel.com/content/1x/stellarvortex_reald_digital_poster_1080x1350_v1.jpg" />
+                            <p class="p">Doctor's <br>Strange</p>
+                            <div class="overlay">
+                                <h2>Doctor's Strange</h2>
+                                <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                        class="imbd" /> <span class="span">6.9 / 10</span></a>
+                                <div>
+                                    <h3 class="cast-h">Cast</h3>
+                                    <img src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSbh6Bq0RBruu0zJdknw8B3MTX84K3dU0DZ2_khIlMmjt6BM0-FcIiICRCQEG49MMbQ4WcL-nkYeKu_bR0"
+                                        class="cast-img" />
+                                    <img src="http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcT6ai9oRIkfh11HeyIIh19uz3ADVw2VOZ8MEBNpPKd-V-7d7nWA7GKAQP5VvvCb5M2LihftUpiC3-JmOhc"
+                                        class="cast-img" />
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <img class="image"
+                                src="https://shivahubhd.pages.dev/Images/The%20Gray%20Man%20(2022).jpg" />
+                            <p class="p">Gray Man</p>
+                            <div class="overlay">
+                                <h2>Gray Man</h2>
+
+                                <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                        class="imbd" /><span class="span">6.5/ 10</span></a>
+                                <div>
+                                    <h3 class="cast-h">Cast</h3>
+                                    <img src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcT15T0J_M4_6KfloeIC9FhLCvhfj74MfP1l_656F9kfbgt6VKgun4oRjMGEXzpl4PCFot_Aebg8RlZvvhU"
+                                        class="cast-img" />
+                                    <img src="https://yt3.googleusercontent.com/uztfV3fZiJ8K6ehJrdv5a5dOtrBUFUiToTh6-rkx9P7PHaRfvI-uln4VM-4KjK4RRqlUTkHheA=s900-c-k-c0x00ffffff-no-rj"
+                                        class="cast-img" />
+                                    <img src="https://ntvb.tmsimg.com/assets/assets/763540_v9_bd.jpg?w=270&h=360"
+                                        class="cast-img" />
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <img class="image"
+                                src="https://assets.gadgets360cdn.com/pricee/assets/product/202212/babylon_poster_1672374652.jpeg" />
+                            <p class="p">Babylon</p>
+                            <div class="overlay">
+                                <h2>Babylon</h2>
+                                <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                        class="imbd" /> <span class="span">7.2 / 10</span></a>
+                                <div>
+                                    <h3 class="cast-h">Cast</h3>
+                                    <img src="http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcTYiQcFe-WmL2c9zefm1O1aDnRzz5QuEUK06F-bYAQdALalZjlGiCZkKp9GvV3crsSaJtofK-xziOe7hso"
+                                        class="cast-img" />
+                                    <img src="http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcRlkMgMM-I82HlvoKmqwNeu796H7MQg6U-3rEo01bp2S2mIBlKieIRaDtS_3sSHL5pI60EwumcVTFrKuBg" class="cast-img" />
+                                    <img src="http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcTWw-2Xj9j3F_o1aQ-dQVdKB3fIJLVau15kzgNJ736mA2W7AAUI3gT95HWhUrAeKvvb3PS3eZsTsARrv4w"
+                                        class="cast-img" />
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <img class="image"
+                                src="https://www.filmibeat.com/img/popcorn/movie_posters/dasara-20220320122651-20470.jpg " />
+                            <p class="p">Dasara</p>
+                            <div class="overlay">
+                                <h2>Dasara</h2>
+                                <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                        class="imbd" /> <span class="span">7.5 / 10</span></a>
+                                <div>
+                                    <h3 class="cast-h">Cast</h3>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Nani_at_an_interview_for_film_companion_%28cropped%29.png"
+                                        class="cast-img" />
+                                    <img src="https://www.themoviedb.org/t/p/w500/fTdgSinsAitdujBBEUEA72GY0pv.jpg"
+                                        class="cast-img" />
+                                    <img src="https://nettv4u.com/imagine/11-01-2018/deekshith-shetty.png"
+                                        class="cast-img" />
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <img class="image"
+                                src="https://images.kinorium.com/movie/poster/2393785/w1500_51531021.jpg  " />
+                            <p class="p">65</p>
+                            <div class="overlay">
+                                <h2>65</h2>
+                                <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                        class="imbd" /> <span class="span">5.7 / 10</span></a>
+                                <div>
+                                    <h3 class="cast-h">Cast</h3>
+                                    <img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTlW3jep_oUpqIkTbPrYfJ6fZVHanwqtaOf3eMIdU1xs4XaRda6j6uj1kXR7_4dbKD2bnAWWM9LJgnWuXs"
+                                        class="cast-img" />
+                                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpt_5qNj-tyV9tOQdj8skILB2S8FsVuDVp5ApC5MQO3bCNbthS"
+                                        class="cast-img" />
+                                </div>
+                            </div>
+                        </div> 
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+                <h1 class="h2">Top Rated</h1>
+                <div class="cards" id="Toprated">
+                    <div class="movie">
+                        <img class="image"
+                            src="https://www.themoviedb.org/t/p/original/hmDNYJkVdooSTNej2AnWV0nbH3q.jpg" />
+                        <p class="p">RRR</p>
+                        <div class="overlay">
+                            <h2>RRR</h2>
+                            <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                    class="imbd" /> <span class="span">7.9 / 10</span></a>
+                            <div>
+                                <h3 class="cast-h">Overview</h3>
+                                <!-- <img src="https://www.themoviedb.org/t/p/w500/mNQA0qYtLeemo7mljd9RlG9jUMR.jpg"
+                                    class="cast-img" />
+                                <img src="https://www.filmibeat.com/img/162x203/popcorn/profile_photos/jr-ntr-20211227113010-4308.jpg"
+                                    class="cast-img" />
+                                <img src="https://www.bollywoodhungama.com/wp-content/uploads/2023/02/Alia-Bhatt-1-4.jpg"
+                                    class="cast-img" /> -->
+
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                      <!-- <div class="box">
+                        <img class="image"
+                            src="https://upload.wikimedia.org/wikipedia/en/7/72/Sanam_Teri_Kasam_2016.jpeg" />
+                        <p class="p">Sanam Teri <br>Kasam</p>
+                        <div class="overlay">
+                            <h2>Sanam Teri Kasam</h2>
+                            <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                    class="imbd" /><span class="span">7.5 / 10</span></a>
+                            <div>
+                                <h3 class="cast-h">Cast</h3>
+                                <img src="https://static.infofamouspeople.com/avatar/bn2r27haru3s8frktt80_faces_rane-harshvardhan-image.jpg"
+                                    class="cast-img" />
+                                <img src="https://en.dailypakistan.com.pk/digital_images/large/2022-10-20/1666270192-6701.jpeg" class="cast-img" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="image"
+                            src="https://filmfare.wwmindia.com/content/2022/dec/pathaan21669878743.jpg" />
+                        <p class="p">Pathaan</p>
+                        <div class="overlay">
+                            <h2>Pathaan</h2>
+                            <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                    class="imbd" /><span class="span">6.1 / 10</span></a>
+                            <div>
+                                <h3 class="cast-h">Cast</h3>
+                                <img src="https://superstarsbio.com/wp-content/uploads/2018/07/Shah-Rukh-Khan-2.jpg"
+                                    class="cast-img" />
+                                <img src="https://imgnew.outlookindia.com/public/uploads/articles/2021/2/13/deepika_570_850_(1).jpg" class="cast-img" />
+                                <img src="https://www.themoviedb.org/t/p/w500/2ITVYVFou0dh3QVcJlhNJVzrA2p.jpg" class="cast-img" />
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="image"
+                            src="https://stat5.bollywoodhungama.in/wp-content/uploads/2022/12/Mission-Majnu.jpg" />
+                        <p class="p">Mission Majnu</p>
+                        <div class="overlay">
+                            <h2>Mission Majnu</h2>
+                            <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                    class="imbd" /> <span class="span">7.4 / 10</span></a>
+                            <div>
+                                <h3 class="cast-h">Cast</h3>
+                                <img src="https://imgnew.outlookindia.com/public/uploads/articles/2019/9/19/12_(15).jpg"
+                                    class="cast-img" />
+                                <img src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcRKx8DeyfgyNUR--S74z_5f0zFMNhJ3cdpXvKZjvLOnPGy-Oe3t7cY0tlN2vL68mkD6oQ0w-klevboekXU" class="cast-img" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="image"
+                            src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/kgf-et00042769-15-12-2020-08-08-47.jpg " />
+                        <p class="p">KGF</p>
+                        <div class="overlay">
+                            <h2>KGF</h2>
+                            <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                    class="imbd" /><span class="span">8.2 / 10</span></a>
+                            <div>
+                                <h3 class="cast-h">Cast</h3>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNxdzDefb5t6YupsJYnDFlzStdeVmBWixoyv6y9D-Wk-oq84VdULJmhClvxQr_eofP7eI&usqp=CAU"
+                                    class="cast-img" />
+                                <img src="https://www.themoviedb.org/t/p/w500/pTsixKDFS3n2xsvR6wDZ9J6jjfQ.jpg" class="cast-img" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="image"
+                            src="https://m.media-amazon.com/images/M/MV5BNjQyNGI5OWEtZjI1Yy00NDVjLWE4MTAtMzRlNzU1NzM2OGVkXkEyXkFqcGdeQXVyMTA1NzEzOTU1._V1_UY1200_CR100,0,630,1200_AL_.jpg " />
+                        <p class="p">Kantara</p>
+                        <div class="overlay">
+                            <h2>Kantara</h2>
+                            <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                    class="imbd" /> <span class="span">8.3 / 10</span></a>
+                            <div>
+                                <h3 class="cast-h">Cast</h3>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Rishab-shetty-20221006101512-12681.jpg"
+                                    class="cast-img" />
+                                <img src="https://i0.wp.com/globalzonetoday.com/wp-content/uploads/2022/09/Sapthami-Gowda-1.jpg?ssl=1" class="cast-img" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+             
+                <!-- <h1 class="h2">Popular Series</h1>
+                <div class="cards" id="drama">
+                    <div class="movie">
+                        <img class="image" src="https://static.toiimg.com/photo/msid-75792614/75792614.jpg?85583" />
+                        <p class="p">Money Heist</p>
+                        <div class="overlay">
+                            <h2>Money Heist</h2>
+                            <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                    class="imbd" /><span class="span">8.2 / 10</span></a>
+                            <div>
+                                <h3 class="cast-h">Cast</h3>
+                                <img src="https://images.mubicdn.net/images/cast_member/607400/cache-320738-1521196560/image-w856.jpg"
+                                    class="cast-img" />
+                                <img src="https://www.themoviedb.org/t/p/w500/wfy2YBmaGkH5kl60y3P03tTAMMc.jpg" class="cast-img" />
+                                <img src="https://flxt.tmsimg.com/assets/207962_v9_bb.jpg" class="cast-img" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Itziar_Itu%C3%B1o_2017.jpg/640px-Itziar_Itu%C3%B1o_2017.jpg" class="cast-img" />
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    </div> -->
+                    <!-- <div class="box">
+                        <img class="image" src="https://pbs.twimg.com/media/FPvLhxrWUAE_iMi.jpg:large" />
+                        <p class="p">Stranger <br>Things</p>
+                        <div class="overlay">
+                            <h2>Stranger Things</h2>
+                            <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                    class="imbd" /><span class="span">8.7 / 10</span></a>
+                            <div>
+                                <h3 class="cast-h">Cast</h3>
+                                <img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcStfUx6WsTheriZGAizvdp3NeQBnFWV7EEXZ58PVlzwZdlWjqlAEwFgHHwX82rhEwa-jzYTTvXu2pAsdOw"
+                                    class="cast-img" />
+                                <img src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQDcTY_pVklN4xtf7yVCW1bQPQip5NiZOGnmO8qzJt0ivkneLJ-MOmn2_pB2e176fubgHkflgioeYgu3GNbwf7I5YB65ON4AZuCNS8LXmEN" class="cast-img" />
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxe5zkUlShdfuR1GORTjBHwDklmcMnmRk6kUjmpEgXKDRYD04JvpBJ4pY-tPJuZ0mXWS4&usqp=CAU"
+                                    class="cast-img" />
+
+                                <img src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcSGKnlXUrpG6UelSly2XBarOE2-wkZoMIFNy3IrmSZ7OIB8tk3GD3eQEZWW6VdI-reEp3XdbZiIX2uc8VBAS33WLQKLdlRE07KSR4SYwZxB" class="cast-img" />
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="image"
+                            src="https://resizing.flixster.com/LumPRA7tw5a4VtKzSnGnTWpW2Q8=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvNTlmOGIyM2ItMzRhMy00MjdkLThkNDYtZWJkZDI1ODMzNmI3LmpwZw==" />
+                        <p class="p">Wednesday</p>
+                        <div class="overlay">
+                            <h2>Wednesday</h2>
+                            <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                    class="imbd" /> <span class="span">8.1 / 10</span></a>
+                            <div>
+                                <h3 class="cast-h">Cast</h3>
+                                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/jenna-ortega-1677582680.jpg?crop=0.535xw:0.465xh;0.232xw,0.0534xh&resize=640:*"
+                                    class="cast-img" />
+                                <img src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcRQFNg3gHuQ5K0aGhaVQko08S-UrTdiJdW9A8jDIaoCli3GlzMY0R-O6K1AvdWXQjvZf7zH18hHb6R8NMQ" class="cast-img" />
+                                <img src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcRORn8qhfjAZfpyw-0kX_lNnLAdisJs1XowhchlDBOYI8Bsxnw1i_nRKPyvMlV3R53vgxB9GJ14YdI45Qg"
+                                    class="cast-img" />
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="image"
+                            src="https://resizing.flixster.com/PYMILH2RwjmJ3uCZyBAEDihOIG4=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvUlRUVjI3OTYxMS53ZWJw" />
+                        <p class="p">Lucifer</p>
+                        <div class="overlay">
+                            <h2>Lucifer</h2>
+                            <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                    class="imbd" /> <span class="span">8.1 / 10</span></a>
+                            <div>
+                                <h3 class="cast-h">Cast</h3>
+                                <img src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRLUmF6p5yT8hSSpwWGrXaYysXD9mo4w0_Ir21zujafRt2HUqgowO7NV0AIJ3dvDQU5bLHOhKFvsN0LE6g"
+                                    class="cast-img" />
+
+                                <img src="https://flxt.tmsimg.com/assets/248687_v9_bd.jpg" class="cast-img" />
+                                <img src="http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQGp4frg-NkafBztg__SykwFOdqtcK_zG1YiMzyinlFDZ9Q_kwoWZCcm6EFxcV1WDSUOyRVW3m_aaQbnJw" class="cast-img" />
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="image"
+                            src="https://assets-prd.ignimgs.com/2022/01/14/gameofthrones-allseasons-sq-1642120207458.jpg" />
+                        <p class="p">Game of <br />Thrones</p>
+                        <div class="overlay">
+                            <h2>Game of Thrones</h2>
+                            <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                    class="imbd" /> <span class="span">9.2 / 10</span></a>
+                            <div>
+                                <h3 class="cast-h">Cast</h3>
+                                <img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSZDh7btKAMEy8Y_vnBPusT5gLgeh2lM79Tnsygk_YNbeGmup-Cz29_6Ire4--fqCqYBDsMXrUjBs2LvI8"
+                                    class="cast-img" />
+                                <img src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQNy5oeXHxsBS5ludro-GBlLANAFsHG5HlNRoiT5jnppTQmGtmjILwE8v1-BXNCyuGRbP2LjM9fGgKy7IlR6xQXpcqfBlzWR8dYI38nwbi6" class="cast-img" />
+                                <img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTfs58IBrZf3bRRru25URJ-GTamHeDEiZ4PRio-lLMttqKIiqVb8ODeXbagmuKHnMnSISPjqgT2hRXhKIY"
+                                    class="cast-img" />
+                                <img src="http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcTb4zRCRyHTpvf8VF7NatwUwfPB8iEWseVkWuOc-K5Az6QId8-Z3SqdLl3FZzXqwfpqA6z-2_xyYjzIiYrUUL0qyscBYotzdU70QqVYPOUT"
+                                    class="cast-img" />
+
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="box">
+                        <img class="image" src="https://posterspy.com/wp-content/uploads/2021/11/squid-game2.png " />
+                        <p class="p">Squid <br />Game
+                        </p>
+                        <div class="overlay">
+                            <h2>Squid Game</h2>
+                            <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                    class="imbd" /> <span class="span">8 / 10</span></a>
+                            <div>
+                                <h3 class="cast-h">Cast</h3>
+                                <img src="http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcSpYPqokHLCQA3cQCvv1szjHw_uaHk5h0gPKaeio-kpsw7aitTQdQEEell9OIyiUlUrXfo4FGywM7Prz7g"
+                                    class="cast-img" />
+                                <img src="https://i.mydramalist.com/kwW2w_5f.jpg" class="cast-img" />
+                                <img src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcRApzmOV4DDVBM4Gcy7zfeByKfbiUeT8kBjQBN5q1IxFAeCjVNgwDDzrA6QEAr5yR5y5Z-RdpVIkDTQXOw" class="cast-img" />
+                                <img src="https://imagez.tmz.com/image/48/1by1/2022/11/25/48ee07f555e2482fb40e432dd131bd27_xl.jpg"
+                                    class="cast-img" />
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   -->
+                <h1 class="kid-h">Movies for Kid's</h1>
+                <div class="cards" id="kid">
+                    <div class="movie">
+                        <img class="image"
+                            src="https://m.media-amazon.com/images/M/MV5BNDJmMzQyMzAtMzMxMy00NTI3LTgzOGMtZDU3Yzc4MjRjNzkwXkEyXkFqcGdeQXVyMTA1OTcyNDQ4._V1_.jpg" />
+                        <p class="p">Ice age</p>
+                        <div class="overlay">
+                            <h2>Ice age</h2>
+                            <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                    class="imbd" /> <span class="span">7.5 / 10</span></a>
+                            <div>
+                                <h3 class="cast-h">Overview</h3>
+                                <!-- <img src="http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcSlx5Im2rL9HabKVzQK-WmjHpX7RMyrUzjaTfDpx1OJ5eG0qxPolrkjji-jYgocL55sKC_95ZcYPyIE-J0Le613NMR59AO3By3UOw_UuUmk"
+                                    class="cast-img" />
+                                <img src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRRDlmX0vU0R5AuOO_k4XBwaqbf1L10qLkHMbfR64Qb6tw0Z4qG54D1snsFl4DYFWP_9Efe2R1SrloRab4" class="cast-img" /> -->
+                            </div>
+                        </div>
+                    </div> 
+                    </div>
+                    <!-- <div class="box">
+                        <img class="image"
+                            src="https://lumiere-a.akamaihd.net/v1/images/p_thejunglebook2016_19751_6b8cfcec.jpeg" />
+                        <p class="p">Jungle Book</p>
+                        <div class="overlay">
+                            <h2>Jungle Book</h2>
+                            <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                    class="imbd" /> <span class="span">7.4 / 10</span></a>
+                            <div>
+                                <h3 class="cast-h">Cast</h3>
+                                <img src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR7Mq9OtjrE8Wz6_D5EYtj1R1v1T313YO8dgiX9Kl7S3fM8sB-aEydEmMtThkCDvsowEvX3f_954dUR-XM"
+                                    class="cast-img" />
+                                <img src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQHYNveoD6zVKem6XkSwsX6dEyFOOyd3eSkQWa1emZlAMzAFw8VnlzzvRvkokyTW9sBDNct7J7COzgEI2c" class="cast-img" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="image"
+                            src="https://musicimage.xboxlive.com/catalog/video.movie.8D6KGWXN2MP9/image?locale=en-us&mode=crop&purposes=BoxArt&q=90&h=225&w=150&format=jpg" />
+                        <p class="p">Lion King</p>
+                        <div class="overlay">
+                            <h2>Lion King</h2>
+                            <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                    class="imbd" /><span class="span">6.8 / 10</span></a>
+                            <div>
+                                <h3 class="cast-h">Cast</h3>
+                                <img src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRLNghiYDDLiAt7HZtebbDj0vXhL1pZLDkAQi2h2yMj5h0b8-aqsir6gbjIhPiJwYIc2rsshIPGhkEGR1k"
+                                    class="cast-img" />
+                                <img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQ34TogaYvZokMA7swpB32_GeKLfwbX7tR8S3q602kFDI89_m-VqucOxZ2xo7l7ovsdCiaZEpPUnq6noF7gwZKrC39AxihCIA64f8NBpgFe" class="cast-img" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="image"
+                            src="https://rukminim1.flixcart.com/image/416/416/l1whaq80/poster/z/g/9/small-poster-the-boss-baby-2017-4k-wall-poster-300-gsm-matte-original-imagdczqhapdrh9s.jpeg?q=70" />
+                        <p class="p">Boss Baby</p>
+                        <div class="overlay">
+                            <h2>Boss Baby</h2>
+                            <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                    class="imbd" /><span class="span">6.3 / 10</span></a>
+                            <div>
+                                <h3 class="cast-h">Cast</h3>
+                                <img src="http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQHupz55blYAxC0mumYkzSdywXqDHexIPhlkLIVngOz2FGIM-NDR75E2hknfbc5BFRbA8Oo6ywBKbarxnw"
+                                    class="cast-img" />
+                                <img src="http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcTWw-2Xj9j3F_o1aQ-dQVdKB3fIJLVau15kzgNJ736mA2W7AAUI3gT95HWhUrAeKvvb3PS3eZsTsARrv4w" class="cast-img" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="image"
+                            src="https://hips.hearstapps.com/hmg-prod/images/best-kids-movies-netflix-cloudy-with-a-chance-of-meatballs-1602183873.jpeg" />
+                        <p class="p">Meatballs</p>
+                        <div class="overlay">
+                            <h2>Meatballs</h2>
+                            <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                    class="imbd" /> <span class="span">6.2 / 10</span></a>
+                            <div>
+                                <h3 class="cast-h">Cast</h3>
+                                <img src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcSayG1ywvqJs7rkWFbqFppdDL564-VtPWuyz6y15Dbt1uNhuHGlTDeezgG3U-X2mRDwMn7Ire3PtAxF-3s"
+                                    class="cast-img" />
+                                <img src="https://www.friendsoffriends.com/app/uploads/kate-lynch/freunde-von-freunden_Kate-RawlinsonAgentLynch_450.jpg" class="cast-img" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="image"
+                            src="https://lumiere-a.akamaihd.net/v1/images/p_toystory4_19639_917ad716.jpeg?region=0%2C0%2C540%2C810 " />
+                        <p class="p">Toy Story</p>
+                        <div class="overlay">
+                            <h2>Toy Story</h2>
+                            <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+                                    class="imbd" /><span class="span">8.3 / 10</span> </a>
+                            <div>
+                                <h3 class="cast-h">Cast</h3>
+                                <img src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQaMZTWnBKqkR9bWNDh6TD_HZkSIIWtz265agrRvyzxfCwEL2_-n34fDPVgm1j6kWLsDv6gJoeumtNRgfg"
+                                    class="cast-img" />
+                                <img src="http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcRAMX2U9JUW2ZFZuSfybAVYLY2XIOZnB6FwSzkwMV5ClahZBowuCTt36WeARR3cwuYgi0CHDtBf2iTNBdlISN3bdq6wGX1OlYsbKfeBMclZ" class="cast-img" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  -->
+
+    <div id="contact" class="footer">
+        <p class="footer-h">Follow Us On</p>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1025px-Instagram-Icon.png" class="image-icon" />
+            <img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png"
+                class="image-icon" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png"
+                class="image-icon" />
+
+        </div>
+        <p class="p-footer"> Terms and Privacy Notice</p>
+        <p class="p-footer">All rights are reserved</p>
+
+    </div>
+
+
+<script src="Movies.js"></script>
+</body>
+
+</html>
