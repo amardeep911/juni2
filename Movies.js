@@ -6,7 +6,7 @@ const BASE_URL = 'https://api.themoviedb.org/3';
 
 const API_URL = BASE_URL + '/discover/movie?primary_release_date.gte=2014-09-15&primary_release_date.lte=2014-10-22&' + API_KEY;
 
-const API_URL_TOP = BASE_URL + '/discover/movie/?certification_country=US&certification=R&sort_by=vote_average.desc&' + API_KEY;
+const API_URL_TOP = 'http://api.themoviedb.org/3' + '/discover/movie/?certification_country=US&certification=R&sort_by=vote_average.desc&' + API_KEY;
 
 const API_URL_KID = BASE_URL + '/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc&'+API_KEY;
 
